@@ -1,0 +1,15 @@
+id = "cssrem"
+name = "CSSREM"
+version = "0.1.0"
+schema_version = 1
+authors = ["bengt.krueckenberg@gmail.com"]
+description = "px ⇄ rem completions for CSS, SCSS and Sass. Type a value like 16px and press Ctrl+Space to get the converted rem value as the first suggestion (and vice versa)."
+repository = "https://github.com/bengtkrueckenberg/zed-cssrem"
+
+# Attach our language server to Zed's built-in CSS and SCSS languages.
+# The completion logic is unit/grammar agnostic, so it also works for any
+# CSS-like buffer. .sass (indented) support requires a Sass language to be
+# present in Zed — see README.
+[language_servers.cssrem]
+name = "cssrem"
+languages = ["CSS", "SCSS"]
